@@ -3,7 +3,7 @@ name: GoLang
 on:
   push:
     branches:
-    - "v*.*"
+    - "v<digit>.<digit>"
     - "!v*.*-beta"
     - "!v*.*.*"
 
