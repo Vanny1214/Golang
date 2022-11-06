@@ -52,7 +52,7 @@ jobs:
                         },
                         {
                             "type": "mrkdwn",
-                            "text": "*Repositary:*\n ${{ github_repositoryUrl }}"
+                            "text": "*Repositary:*\n ${{ github.repositoryUrl }}"
                         }
                     ]
                 },
