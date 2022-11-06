@@ -3,17 +3,13 @@ name: GoLang
 on:
   push:
     branches:
-    - "v*.*"
-    - "!v*.*-beta"
-    - "!v*.*.*"
-
+    - v[0-9]+.[0-9]+
+    
 
 jobs:
   release-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Echo the branch name
-      run: echo "current branch - ${{ github.ref_name }}"
     - name: Checkout the branch
       uses: actions/checkout@v3
       with:
@@ -66,7 +62,7 @@ jobs:
                     "fields": [
                         {
                             "type": "mrkdwn",
-                            "text": "*Delopyment:*\nhttps://golangdeploy-production.up.railway.app/"
+                            "text": "*Delopyment:*\n https://golangdeploy-production.up.railway.app/"
                         }
                     ]
                 },
