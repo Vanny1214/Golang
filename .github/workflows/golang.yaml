@@ -26,9 +26,8 @@ jobs:
                 {
                     "type": "header",
                     "text": {
-                        "type": "plain_text",
-                        "text": "DipSA55 CI/CD Assignment Submission",
-                        "emoji": true
+                        "type": "markdwn",
+                        "text": "DipSA55 CI/CD Assignment Submission"
                     }
                 },
                 {
@@ -36,11 +35,11 @@ jobs:
                     "fields": [
                         {
                             "type": "mrkdwn",
-                            "text": "*Name:*\nGao Yumengdie"
+                            "text": "*Name:*\n Gao Yumengdie"
                         },
                         {
                             "type": "mrkdwn",
-                            "text": "*Metriculation:*\nA0265061L"
+                            "text": "*Metriculation:*\n A0265061L"
                         }
                     ]
                 },
@@ -49,11 +48,11 @@ jobs:
                     "fields": [
                         {
                             "type": "mrkdwn",
-                            "text": "*Email:*\ne1045736@u.nus.edu"
+                            "text": "*Email:*\n e1045736@u.nus.edu"
                         },
                         {
                             "type": "mrkdwn",
-                            "text": "*Repositary:*\nhttps://github.com/Vanny1214/Golang"
+                            "text": "*Repositary:*\n ${{ github_repositoryUrl }}"
                         }
                     ]
                 },
@@ -70,7 +69,7 @@ jobs:
                     "type": "section",
                     "text": {
                       "type": "mrkdwn",
-                      "text": "<https://golangdeploy-production.up.railway.app/|Open Application>"
+                      "text": "*<https://golangdeploy-production.up.railway.app/|Open Application>*"
                     }
                 }
             ]
