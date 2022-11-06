@@ -61,7 +61,7 @@ jobs:
                     "fields": [
                         {
                             "type": "mrkdwn",
-                            "text": "*Delopyment:*\n https://golangdeploy-production.up.railway.app/"
+                            "text": "*Delopyment:*\n ${{ secrets.RAILWAY_URL }}"
                         }
                     ]
                 },
@@ -69,7 +69,7 @@ jobs:
                     "type": "section",
                     "text": {
                       "type": "mrkdwn",
-                      "text": "*<https://golangdeploy-production.up.railway.app/|Open Application>*"
+                      "text": "*<${{ secrets.RAILWAY_URL }}|Open Application>*"
                     }
                 }
             ]
