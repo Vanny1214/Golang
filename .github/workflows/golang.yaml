@@ -77,5 +77,16 @@ jobs:
 
           }
       env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL1 }}
-        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK/"
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+    
+    - name: Railway CLI Create
+      run: npm i -g @railway/cli
+    
+    - name: Railway Auto deploy 
+      run: railway up
+      env:
+        RAILWAY_TOKEN: ${{ secrets.RAIL_WAY }}
+        
+      
+      
